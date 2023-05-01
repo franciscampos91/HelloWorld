@@ -1,0 +1,142 @@
+*{
+    color: #fff;
+    font-family: Rowdies, "Geometr415 Blk BT", monospace;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #000;
+    background-image: url("../images/ceu.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+p{
+    margin: 0;
+}
+
+.esquerda{
+    width: 63%;
+    float: left;
+    max-width: 100%;
+}
+
+.esquerda > p{
+    margin: 10px;
+}
+
+#globo{
+    width: 115%;
+    position: relative;
+    left: -10%;
+}
+body:hover #globo{
+    transform: rotate(400grad);
+    transition: 160s ease;
+}
+
+.direita{
+    width: 35%;
+    float: left;
+    font-size: 3em;
+}
+
+.direita > p{
+    color: rgb(141, 143, 138);
+}
+
+.esquerda > img{
+    width: 50%;
+}
+
+.esquerda > p{
+    font-size: 7em;
+    color: rgb(71, 7, 109);
+}
+
+
+.clear{
+    clear: both;
+}
+
+.meio{
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -50%);
+
+}
+
+#campos{
+    color: rgb(71, 7, 109);
+}
+
+#foto{
+    background-color: rgb(71, 7, 109);
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+}
+
+#foto > img{
+    width: 90%;
+    position: relative;
+    left: -10%;
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        overflow: scroll;
+    }
+
+    .direita, 
+    .esquerda{
+        width: 100%;
+        float: none;
+    }
+
+    .direita{
+        position: relative;
+        font-size: 1.4em;
+        height: 30%;
+        padding-left: 10px;
+
+    }
+
+    #globo{
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    #globo{
+        transform: rotate(400grad);
+        transition: 160s ease;
+    }
+
+    #foto{
+        position: relative;
+        transform: translate(0,0);
+        background-color: rgb(158, 25, 92);
+        padding-top: 0;
+        padding-bottom: 0;
+        display: inline;
+    }
+
+    #foto > img{
+        width: 25%;
+        transform: translate(50%,0);
+    }
+
+    #campos{
+        color: rgb(158, 25, 92);
+    }
+
+
+}
